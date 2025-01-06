@@ -3,3 +3,11 @@ SELECT ?apartment WHERE {
   ?apartment :hasFloors ?floors .
   FILTER(?floors > 2)
 }
+
+
+SELECT ?resident WHERE {
+  ?resident rdf:type :Resident .
+  ?request rdf:type :MaintenanceRequest .
+  ?request :status "Pending" .
+  ?request :madeBy ?resident .
+}
