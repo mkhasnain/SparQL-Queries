@@ -1,0 +1,5 @@
+SELECT ?apartment WHERE {
+  ?apartment rdf:type :Apartment .
+  ?apartment :hasFloors ?floors .
+  FILTER(?floors > 2)
+}
