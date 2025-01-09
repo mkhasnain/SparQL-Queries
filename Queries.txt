@@ -11,3 +11,12 @@ SELECT ?resident WHERE {
   ?request :status "Pending" .
   ?request :madeBy ?resident .
 }
+
+
+SELECT ?vehicle WHERE {
+  ?vehicle rdf:type hs:Vehical .
+  ?vehicle hs:hasColor "Black" .
+  ?vehicle hs:hasRegistrationDate ?registrationDate .
+  FILTER(?registrationDate > "2020-01-01"^^xsd:date)
+}
+
