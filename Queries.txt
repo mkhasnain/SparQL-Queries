@@ -32,3 +32,10 @@ SELECT ?vehicle WHERE {
   FILTER(?registrationDate >= "2021-01-01"^^xsd:date)
 }
 
+SELECT ?vehicle WHERE {
+  ?vehicle rdf:type hs:Vehical .
+  ?vehicle hs:hasMake "Honda" .
+  ?vehicle hs:hasType "Sedan" .
+  ?vehicle hs:hasRegistrationDate ?registrationDate .
+  FILTER(?registrationDate < "2023-01-01"^^xsd:date)
+}
