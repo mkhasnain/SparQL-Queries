@@ -44,3 +44,11 @@ SELECT ?vehicle WHERE {
   ?vehicle rdf:type hs:Vehical .
   ?vehicle hs:hasColor "Red" .
 }
+
+PREFIX hs: <http://www.semanticweb.org/m7177/ontologies/2024/11/housing_society#>
+
+SELECT ?vehicle
+WHERE {
+  ?vehicle a hs:Vehical .
+}
+
