@@ -4,15 +4,6 @@ SELECT ?apartment WHERE {
   FILTER(?floors > 2)
 }
 
-
-SELECT ?resident WHERE {
-  ?resident rdf:type :Resident .
-  ?request rdf:type :MaintenanceRequest .
-  ?request :status "Pending" .
-  ?request :madeBy ?resident .
-}
-
-
 SELECT ?vehicle WHERE {
   ?vehicle rdf:type hs:Vehical .
   ?vehicle hs:hasColor "Black" .
