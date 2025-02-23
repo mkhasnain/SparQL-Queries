@@ -38,8 +38,3 @@ SELECT ?vehicle WHERE {
 
 PREFIX hs: <http://www.semanticweb.org/m7177/ontologies/2024/11/housing_society#>
 
-SELECT ?vehicle
-WHERE {
-  ?vehicle a hs:Vehical .
-}
-
