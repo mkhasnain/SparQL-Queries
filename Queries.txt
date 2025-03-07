@@ -30,11 +30,3 @@ SELECT ?vehicle WHERE {
   ?vehicle hs:hasRegistrationDate ?registrationDate .
   FILTER(?registrationDate < "2023-01-01"^^xsd:date)
 }
-
-SELECT ?vehicle WHERE {
-  ?vehicle rdf:type hs:Vehical .
-  ?vehicle hs:hasColor "Red" .
-}
-
-PREFIX hs: <http://www.semanticweb.org/m7177/ontologies/2024/11/housing_society#>
-
