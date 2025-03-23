@@ -24,6 +24,3 @@ SELECT ?vehicle WHERE {
 }
 
 SELECT ?vehicle WHERE {
-  ?vehicle rdf:type hs:Vehical .
-  ?vehicle hs:hasMake "Honda" .
-  ?vehicle hs:hasType "Sedan" .
