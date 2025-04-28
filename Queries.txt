@@ -16,9 +16,4 @@ SELECT ?vehicle WHERE {
   FILTER NOT EXISTS { ?vehicle hs:hasType ?type . }
 }
 
-SELECT ?vehicle WHERE {
-  ?vehicle rdf:type hs:Vehical .
-  ?vehicle hs:hasRegistrationDate ?registrationDate .
-  ?vehicle hs:hasColor "Blue" .
-  FILTER(?registrationDate >= "2021-01-01"^^xsd:date)
-}
+
