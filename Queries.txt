@@ -16,4 +16,11 @@ SELECT ?vehicle WHERE {
   FILTER NOT EXISTS { ?vehicle hs:hasType ?type . }
 }
 
+PREFIX : <http://example.org/transport#>
+SELECT ?ticket ?price
+WHERE {
+  ?ticket rdf:type :Ticket .
+  ?ticket :ticketPrice ?price .
+  FILTER(?price > 5)
+}
 
